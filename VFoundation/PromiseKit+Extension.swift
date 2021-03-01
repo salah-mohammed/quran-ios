@@ -47,9 +47,10 @@ extension Promise {
 }
 
 extension URLSession {
-    public func getTasks() -> Guarantee<([URLSessionDataTask], [URLSessionUploadTask], [URLSessionDownloadTask])> {
-        return Guarantee { getTasksWithCompletionHandler($0) }
-    }
+//    public func getTasks() -> Guarantee<([URLSessionDataTask], [URLSessionUploadTask], [URLSessionDownloadTask])> {
+//        return Guarantee { getTasksWithCompletionHandler(// $0
+//        ) }
+//    }
 }
 
 extension OperationQueue {

@@ -69,7 +69,7 @@ public func logCriticalIssue(_ items: Any..., separator: String = " ") {
 
 public func fatalError(_ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) -> Never {
     CLog("message: \(message()), file:\(file.description), line:\(line)")
-    Swift.fatalError(message, file: file, line: line)
+    Swift.fatalError(message(), file: file, line: line)
 }
 
 public func fatalError(_ message: @autoclosure () -> String = "", _ error: Error, file: StaticString = #file, line: UInt = #line) -> Never {
