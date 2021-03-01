@@ -3012,8 +3012,6 @@
 				54B265DF1CC57D8E00D3AEF8 /* Sources */,
 				54B265E01CC57D8E00D3AEF8 /* Frameworks */,
 				54B265E11CC57D8E00D3AEF8 /* Resources */,
-				54B266481CC81D6500D3AEF8 /* Swiftlint Run Script */,
-				54A99CB41CF7BDF2003995AE /* Fabric Run Script */,
 				A7C0CB29E29693C884F7AE27 /* [CP] Embed Pods Frameworks */,
 				5467841D1EB29DDD0012FA2C /* Embed Frameworks */,
 				54D133DC1EF9852F00037D8C /* Copy Manual Frameworks */,
@@ -3081,7 +3079,7 @@
 					};
 					545D96531EBF9741006D758A = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = MKP73M5X4A;
+						DevelopmentTeam = 8C7RSZ7C3V;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 54B265E21CC57D8E00D3AEF8;
@@ -3100,16 +3098,16 @@
 					};
 					5484C2DD1ED8C00C0068025A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = MKP73M5X4A;
+						DevelopmentTeam = 8C7RSZ7C3V;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 54B265E21CC57D8E00D3AEF8;
 					};
 					54B265E21CC57D8E00D3AEF8 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MKP73M5X4A;
+						DevelopmentTeam = 8C7RSZ7C3V;
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -3294,34 +3292,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		54A99CB41CF7BDF2003995AE /* Fabric Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fabric Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9d14e32641d4697dc9516655505b19a7b3d91747 2c77b30cb2574beb030dae483b3b4effcff2475154a8d503c86728fa9ab13393\n";
-		};
-		54B266481CC81D6500D3AEF8 /* Swiftlint Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swiftlint Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		54D133DC1EF9852F00037D8C /* Copy Manual Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4428,7 +4398,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = MKP73M5X4A;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				INFOPLIST_FILE = QuranUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4447,7 +4417,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = MKP73M5X4A;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				INFOPLIST_FILE = QuranUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4592,7 +4562,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = MKP73M5X4A;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QuranFoundation",
@@ -4614,7 +4584,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = MKP73M5X4A;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QuranFoundation",
@@ -4744,9 +4714,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = MKP73M5X4A;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QuranFoundation",
@@ -4757,7 +4728,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quran.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quran/Quran-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
@@ -4771,8 +4742,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MKP73M5X4A;
+				DEVELOPMENT_TEAM = 8C7RSZ7C3V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QuranFoundation",
@@ -4782,7 +4754,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quran.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Quran App Store Dist";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Quran/Quran-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
